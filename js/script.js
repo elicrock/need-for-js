@@ -82,7 +82,7 @@ function startGame(event) {
     enemy.y = -100 * setting.traffic * (i + 1);
     enemy.style.left = Math.floor(Math.random() * (gameArea.offsetWidth - 50)) + 'px';
     enemy.style.top = enemy.y + 'px';
-    enemy.style.background = `transparent url('../img/enemy${enemyImg}.png') center / cover no-repeat`;
+    enemy.style.background = `transparent url('./img/enemy${enemyImg}.png') center / cover no-repeat`;
     gameArea.appendChild(enemy);
   }
   
@@ -207,7 +207,7 @@ function moveEnemy() {
       let enemyImg = Math.floor(Math.random() * 4) + 1;
       item.y = -100 * setting.traffic;
       item.style.left = Math.floor(Math.random() * (gameArea.offsetWidth - 50)) + 'px';
-      item.style.background = `transparent url('../img/enemy${enemyImg}.png') center / cover no-repeat`;
+      item.style.background = `transparent url('./img/enemy${enemyImg}.png') center / cover no-repeat`;
     }
   });
 }
